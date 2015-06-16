@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/ant-1.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/com4j.jar"/>
+	<classpathentry kind="lib" path="lib/CRAFT_SupportLibraries_v4.jar"/>
+	<classpathentry kind="lib" path="lib/db2jcc-9.5.jar"/>
+	<classpathentry kind="lib" path="lib/Framework_Core.jar"/>
+	<classpathentry kind="lib" path="lib/Framework_DataTable.jar"/>
+	<classpathentry kind="lib" path="lib/Framework_Reporting.jar"/>
+	<classpathentry kind="lib" path="lib/Framework_Utilities.jar"/>
+	<classpathentry kind="lib" path="lib/joda-time-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/jsch-0.1.48.jar"/>
+	<classpathentry kind="lib" path="lib/operadriver-0.14.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="lib/QC.jar"/>
+	<classpathentry kind="lib" path="lib/resty-0.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-server-standalone-2.39.0.jar"/>
+	<classpathentry kind="lib" path="lib/xml-apis-1.3.04.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

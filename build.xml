@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="CRAFT - Selenium WebDriver with Page Object Model">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../New folder/New Folder-Pls Dont delete/Software/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="CRAFT - Selenium WebDriver with Page Object Model.classpath">
+        <pathelement location="."/>
+        <pathelement location="lib/ant-1.7.0.jar"/>
+        <pathelement location="lib/com4j.jar"/>
+        <pathelement location="lib/CRAFT_SupportLibraries_v4.jar"/>
+        <pathelement location="lib/db2jcc-9.5.jar"/>
+        <pathelement location="lib/Framework_Core.jar"/>
+        <pathelement location="lib/Framework_DataTable.jar"/>
+        <pathelement location="lib/Framework_Reporting.jar"/>
+        <pathelement location="lib/Framework_Utilities.jar"/>
+        <pathelement location="lib/joda-time-2.1.jar"/>
+        <pathelement location="lib/jsch-0.1.48.jar"/>
+        <pathelement location="lib/operadriver-0.14.jar"/>
+        <pathelement location="lib/poi-3.8-20120326.jar"/>
+        <pathelement location="lib/QC.jar"/>
+        <pathelement location="lib/resty-0.3.1.jar"/>
+        <pathelement location="lib/selenium-server-standalone-2.39.0.jar"/>
+        <pathelement location="lib/xml-apis-1.3.04.jar"/>
+    </path>
+    <target name="init">
+        <copy includeemptydirs="false" todir=".">
+            <fileset dir=".">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete>
+            <fileset dir="." includes="**/*.class"/>
+        </delete>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="." includeantruntime="false" source="${source}" target="${target}">
+            <src path="."/>
+            <classpath refid="CRAFT - Selenium WebDriver with Page Object Model.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target depends="build-project" name="Allocator (9)">
+        <java classname="allocator.Allocator" failonerror="true" fork="yes">
+			<syspropertyset>
+				<propertyref regex=".*" />
+			</syspropertyset>
+            <classpath refid="CRAFT - Selenium WebDriver with Page Object Model.classpath"/>
+        </java>
+    </target>
+	
+</project>
