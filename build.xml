@@ -65,7 +65,7 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target depends="build-project" name="Allocator (9)">
+    <target depends="build-project" name="Allocator">
         <java classname="allocator.Allocator" failonerror="true" fork="yes">
 			<syspropertyset>
 				<propertyref regex=".*" />
